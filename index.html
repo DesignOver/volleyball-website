@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Волейбольный клуб “Кама”</title>
@@ -36,14 +38,14 @@
           </li>
         </ul>
       </nav>
-      <ul class="socials-list page-header__socials-list">
-        <li class="socials-item page-header__socials-item">
+      <ul class="socials-list socials-black page-header__socials-list">
+        <li class="socials-list__item page-header__socials-item">
           <a href="#">ВКонтакте</a>
         </li>
-        <li class="socials-item page-header__socials-item">
+        <li class="socials-list__item page-header__socials-item">
           <a href="#">Instagram</a>
         </li>
-        <li class="socials-item page-header__socials-item">
+        <li class="socials-list__item page-header__socials-item">
           <a href="#">YouTube</a>
         </li>
       </ul>
@@ -57,12 +59,15 @@
         <a href="#">
           <div class="main-news__photo">
             <img src="img/main-news-photo.jpg" width="1045" height="340" alt="Александр Мазунин отбивает мяч">
+            <div class="gradient gradient_main-news"></div>
           </div>
-          <time class="main-news__time" datetime="2021-03-27">27.03.2021</time>
-          <p class="main-news__text">
-            Крутое название статьи про чувака,
-            который упал во время матча против другой крутой команды
-          </p>
+          <div class="main-news__description">
+            <time class="main-news__time" datetime="2021-03-27">27.03.2021</time>
+            <p class="main-news__text">
+              Крутое название статьи про чувака,
+              который упал во время матча против другой крутой команды
+            </p>
+          </div>
         </a>
       </section>
 
@@ -102,7 +107,7 @@
             <td>16</td>
           </tr>
           <tr class="standings__row standings__row_active">
-            <td>Кама</td>
+            <td>КАМА</td>
             <td>10</td>
             <td>5</td>
             <td>5</td>
@@ -136,11 +141,25 @@
         </table>
       </section>
 
+      <section class="gallery">
+        <h2 class="visually-hidden">Фотогалерея</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <a class="gallery__image">
+              <img src="img/galllery-photo1.jpg" width="680" height="240" alt="Общее фото команды">
+              <div class="gradient gradient_gallery"></div>
+            </a>
+          </li>
+        </ul>
+        <button class="gallery__button gallery__button_prev" type="button">Назад</button>
+        <button class="gallery__button gallery__button_next" type="button">Вперед</button>
+      </section>
+
       <section class="closest-match">
         <h2 class="section-title section-title_small">Ближайший матч</h2>
         <a class="closes-match__more-link" href="#">Подробнее</a>
         <div class="team team_first closes-match_team">
-          <h3 class="team__title">Кама</h3>
+          <h3 class="team__title">КАМА</h3>
         </div>
         <div class="closest-match__divider"></div>
         <div class="team team_first closes-match_team">
@@ -152,29 +171,6 @@
         </p>
       </section>
 
-      <section class="gallery">
-        <h2 class="visually-hidden">Фотогалерея</h2>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <a class="gallery__image">
-              <img src="img/galllery-photo1.jpg" width="680" height="240" alt="Общее фото команды">
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__image">
-              <img src="img/galllery-photo1.jpg" width="680" height="240" alt="Общее фото команды">
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__image">
-              <img src="img/galllery-photo1.jpg" width="680" height="240" alt="Общее фото команды">
-            </a>
-          </li>
-        </ul>
-        <button class="gallery__button gallery__button_prev" type="button">Назад</button>
-        <button class="gallery__button gallery__button_next" type="button">Вперед</button>
-      </section>
-
       <section class="news">
         <h2 class="visually-hidden">Новости</h2>
         <ul class="news__list">
@@ -182,6 +178,7 @@
             <a href="#">
               <div class="news__photo">
                 <img src="img/news-photo1.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                <div class="gradient gradient_news"></div>
               </div>
               <time class="news__time" datetime="2021-03-27">27.03.2021</time>
               <p class="news__text">
@@ -194,6 +191,7 @@
             <a href="#">
               <div class="news__photo">
                 <img src="img/news-photo2.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                <div class="gradient gradient_news"></div>
               </div>
               <time class="news__time" datetime="2021-03-20">20.03.2021</time>
               <p class="news__text">
@@ -205,6 +203,7 @@
             <a href="#">
               <div class="news__photo">
                 <img src="img/news-photo3.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                <div class="gradient gradient_news"></div>
               </div>
               <time class="news__time" datetime="2021-03-20">20.03.2021</time>
               <p class="news__text">
@@ -216,6 +215,7 @@
             <a href="#">
               <div class="news__photo">
                 <img src="img/news-photo4.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                <div class="gradient gradient_news"></div>
               </div>
               <time class="news__time" datetime="2021-03-19">19.03.2021</time>
               <p class="news__text">
@@ -227,6 +227,7 @@
             <a href="#">
               <div class="news__photo">
                 <img src="img/news-photo5.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                <div class="gradient gradient_news"></div>
               </div>
               <time class="news__time" datetime="2021-03-19">19.03.2021</time>
               <p class="news__text">
@@ -238,6 +239,7 @@
             <a href="#">
               <div class="news__photo">
                 <img src="img/news-photo6.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                <div class="gradient gradient_news"></div>
               </div>
               <time class="news__time" datetime="2021-03-15">15.03.2021</time>
               <p class="news__text">
@@ -296,42 +298,42 @@
       <div class="page-footer__logo">
         <img src="https://via.placeholder.com/140x80" width="140" height="80" alt="Логотип волейбольного клуба “Кама”">
       </div>
-      <p class="page-foter__copy">
+      <p class="page-footer__copy">
         Волейбольный клуб “Кама” ©2021<br>
         Все права защищены.
       </p>
-      <ul class="page-foter__nav-list">
-        <li class="page-foter__nav-item">
+      <ul class="page-footer__nav-list">
+        <li class="page-footer__nav-item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="page-foter__nav-item">
+        <li class="page-footer__nav-item">
           <a href="#">Новости</a>
         </li>
-        <li class="page-foter__nav-item">
+        <li class="page-footer__nav-item">
           <a href="#">Команда</a>
         </li>
-        <li class="page-foter__nav-item">
+        <li class="page-footer__nav-item">
           <a href="#">Фотогалерея</a>
         </li>
-        <li class="page-foter__nav-item">
+        <li class="page-footer__nav-item">
           <a href="#">Матчи</a>
         </li>
-        <li class="page-foter__nav-item">
+        <li class="page-footer__nav-item">
           <a href="#">Контакты</a>
         </li>
       </ul>
-      <ul class="socials-list page-footer__socials-list">
-        <li class="socials-item page-footer__socials-item">
+      <ul class="socials-list socials-list_grey page-footer__socials-list">
+        <li class="socials-list__item page-footer__socials-item">
           <a href="#">ВКонтакте</a>
         </li>
-        <li class="socials-item page-footer__socials-item">
+        <li class="socials-list__item page-footer__socials-item">
           <a href="#">Instagram</a>
         </li>
-        <li class="socials-item page-footer__socials-item">
+        <li class="socials-list__item page-footer__socials-item">
           <a href="#">YouTube</a>
         </li>
       </ul>
-      <p class="page-foter__contacts">
+      <p class="page-footer__contacts">
         <a href="mailto:newpost@gmail.com">newpost@gmail.com</a><br>
         тел.: <a href="tel:+73421111111">(+7) 342 111 11 11</a><br>
         <a href="tel:+73421111113">(+7) 342 111 11 13</a>
