@@ -13,7 +13,7 @@
 
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav page-header__main-nav">
         <div class="page-header__logo">
           <img src="https://via.placeholder.com/140x80" width="140" height="80" alt="Логотип волейбольного клуба “Кама”">
         </div>
@@ -52,208 +52,218 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Волейбольный клуб “Кама”</h1>
+      <div class="main-container">
+        <h1 class="visually-hidden">Волейбольный клуб “Кама”</h1>
 
-      <section class="main-news">
-        <h2 class="visually-hidden">Главная новость</h2>
-        <a href="#">
-          <div class="main-news__photo">
-            <img src="img/main-news-photo.jpg" width="1045" height="340" alt="Александр Мазунин отбивает мяч">
-            <div class="gradient gradient_main-news"></div>
-          </div>
-          <div class="main-news__description">
-            <time class="main-news__time" datetime="2021-03-27">27.03.2021</time>
-            <p class="main-news__text">
-              Крутое название статьи про чувака,
-              который упал во время матча против другой крутой команды
+        <div class="main-news-standings-container">
+          <section class="main-news">
+            <h2 class="visually-hidden">Главная новость</h2>
+            <a href="#">
+              <div class="main-news__photo">
+                <img src="img/main-news-photo.jpg" width="1045" height="340" alt="Александр Мазунин отбивает мяч">
+                <div class="gradient gradient_main-news"></div>
+              </div>
+              <div class="main-news__description">
+                <time class="main-news__time" datetime="2021-03-27">27.03.2021</time>
+                <p class="main-news__text">
+                  Крутое название статьи про чувака,
+                  который упал во время матча против другой крутой команды
+                </p>
+              </div>
+            </a>
+          </section>
+
+          <section class="standings">
+            <h2 class="visually-hidden">Турнирная таблица</h2>
+            <table class="standings__table">
+              <tr class="standings__row standings__row_title">
+                <th>Команды</th>
+                <th>И</th>
+                <th>В</th>
+                <th>П</th>
+                <th>Парт</th>
+                <th>О</th>
+              </tr>
+              <tr class="standings__row">
+                <td>Локомотив-Изумруд</td>
+                <td>10</td>
+                <td>7</td>
+                <td>3</td>
+                <td>21-13</td>
+                <td>20</td>
+              </tr>
+              <tr class="standings__row">
+                <td>МГТУ</td>
+                <td>10</td>
+                <td>6</td>
+                <td>4</td>
+                <td>24-17</td>
+                <td>19</td>
+              </tr>
+              <tr class="standings__row">
+                <td>Ярославич</td>
+                <td>10</td>
+                <td>6</td>
+                <td>4</td>
+                <td>19-17</td>
+                <td>16</td>
+              </tr>
+              <tr class="standings__row standings__row_active">
+                <td>КАМА</td>
+                <td>10</td>
+                <td>5</td>
+                <td>5</td>
+                <td>19-17</td>
+                <td>17</td>
+              </tr>
+              <tr class="standings__row">
+                <td>Искра</td>
+                <td>10</td>
+                <td>5</td>
+                <td>5</td>
+                <td>20-18</td>
+                <td>15</td>
+              </tr>
+              <tr class="standings__row">
+                <td>Нова</td>
+                <td>10</td>
+                <td>1</td>
+                <td>9</td>
+                <td>6-27</td>
+                <td>3</td>
+              </tr>
+              <tr class="standings__row">
+                <td>Еще команда</td>
+                <td>10</td>
+                <td>1</td>
+                <td>9</td>
+                <td>6-27</td>
+                <td>3</td>
+              </tr>
+            </table>
+          </section>
+        </div>
+
+        <div class="gallery-closest-container">
+          <section class="gallery">
+            <h2 class="visually-hidden">Фотогалерея</h2>
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <a class="gallery__image">
+                  <img src="img/galllery-photo1.jpg" width="680" height="240" alt="Общее фото команды">
+                  <div class="gradient gradient_gallery"></div>
+                </a>
+              </li>
+            </ul>
+            <button class="gallery__button gallery__button_prev" type="button">Назад</button>
+            <button class="gallery__button gallery__button_next" type="button">Вперед</button>
+          </section>
+
+          <section class="closest-match">
+            <div class="closest-match__title-row">
+              <h2 class="section-title section-title_small closest-match__title">Ближайший матч</h2>
+              <a class="closes-match__more-link" href="#">Подробнее</a>
+            </div>
+            <div class="closest-match__match-row">
+              <div class="team team_first closes-match_team">
+                <h3 class="team__title">КАМА</h3>
+              </div>
+              <div class="closest-match__divider"></div>
+              <div class="team team_first closes-match_team">
+                <h3 class="team__title">Локомотив-Изумруд</h3>
+              </div>
+            </div>
+            <p class="closest-match__details">
+              <time datetime="2021-03-29">Сб, 29.03.2021</time><br>
+              Пермь
             </p>
-          </div>
-        </a>
-      </section>
-
-      <section class="standings">
-        <h2 class="visually-hidden">Турнирная таблица</h2>
-        <table class="standings__table">
-          <tr class="standings__row standings__row_title">
-            <th>Команды</th>
-            <th>И</th>
-            <th>В</th>
-            <th>П</th>
-            <th>Парт</th>
-            <th>О</th>
-          </tr>
-          <tr class="standings__row">
-            <td>Локомотив-Изумруд</td>
-            <td>10</td>
-            <td>7</td>
-            <td>3</td>
-            <td>21-13</td>
-            <td>20</td>
-          </tr>
-          <tr class="standings__row">
-            <td>МГТУ</td>
-            <td>10</td>
-            <td>6</td>
-            <td>4</td>
-            <td>24-17</td>
-            <td>19</td>
-          </tr>
-          <tr class="standings__row">
-            <td>Ярославич</td>
-            <td>10</td>
-            <td>6</td>
-            <td>4</td>
-            <td>19-17</td>
-            <td>16</td>
-          </tr>
-          <tr class="standings__row standings__row_active">
-            <td>КАМА</td>
-            <td>10</td>
-            <td>5</td>
-            <td>5</td>
-            <td>19-17</td>
-            <td>17</td>
-          </tr>
-          <tr class="standings__row">
-            <td>Искра</td>
-            <td>10</td>
-            <td>5</td>
-            <td>5</td>
-            <td>20-18</td>
-            <td>15</td>
-          </tr>
-          <tr class="standings__row">
-            <td>Нова</td>
-            <td>10</td>
-            <td>1</td>
-            <td>9</td>
-            <td>6-27</td>
-            <td>3</td>
-          </tr>
-          <tr class="standings__row">
-            <td>Еще команда</td>
-            <td>10</td>
-            <td>1</td>
-            <td>9</td>
-            <td>6-27</td>
-            <td>3</td>
-          </tr>
-        </table>
-      </section>
-
-      <section class="gallery">
-        <h2 class="visually-hidden">Фотогалерея</h2>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <a class="gallery__image">
-              <img src="img/galllery-photo1.jpg" width="680" height="240" alt="Общее фото команды">
-              <div class="gradient gradient_gallery"></div>
-            </a>
-          </li>
-        </ul>
-        <button class="gallery__button gallery__button_prev" type="button">Назад</button>
-        <button class="gallery__button gallery__button_next" type="button">Вперед</button>
-      </section>
-
-      <section class="closest-match">
-        <h2 class="section-title section-title_small">Ближайший матч</h2>
-        <a class="closes-match__more-link" href="#">Подробнее</a>
-        <div class="team team_first closes-match_team">
-          <h3 class="team__title">КАМА</h3>
+          </section>
         </div>
-        <div class="closest-match__divider"></div>
-        <div class="team team_first closes-match_team">
-          <h3 class="team__title">Локомотив-Изумруд</h3>
-        </div>
-        <p class="closest-match__details">
-          <time datetime="2021-03-29">Сб, 29.03.2021</time><br>
-          Пермь
-        </p>
-      </section>
 
-      <section class="news">
-        <h2 class="visually-hidden">Новости</h2>
-        <ul class="news__list">
-          <li class="news__item">
-            <a href="#">
-              <div class="news__photo">
-                <img src="img/news-photo1.jpg" width="450" height="190" alt="Фото с волейбольного матча">
-                <div class="gradient gradient_news"></div>
-              </div>
-              <time class="news__time" datetime="2021-03-27">27.03.2021</time>
-              <p class="news__text">
-                Крутое название статьи про чувака,
-                который упал во время матча против другой крутой команды
-              </p>
-            </a>
-          </li>
-          <li class="news__item">
-            <a href="#">
-              <div class="news__photo">
-                <img src="img/news-photo2.jpg" width="450" height="190" alt="Фото с волейбольного матча">
-                <div class="gradient gradient_news"></div>
-              </div>
-              <time class="news__time" datetime="2021-03-20">20.03.2021</time>
-              <p class="news__text">
-                Ого какие чуваки крутые, не, ну вы это видели, да они просто мощь!
-              </p>
-            </a>
-          </li>
-          <li class="news__item">
-            <a href="#">
-              <div class="news__photo">
-                <img src="img/news-photo3.jpg" width="450" height="190" alt="Фото с волейбольного матча">
-                <div class="gradient gradient_news"></div>
-              </div>
-              <time class="news__time" datetime="2021-03-20">20.03.2021</time>
-              <p class="news__text">
-                Ребята кидали мяч и вот что из этого вышло...
-              </p>
-            </a>
-          </li>
-          <li class="news__item">
-            <a href="#">
-              <div class="news__photo">
-                <img src="img/news-photo4.jpg" width="450" height="190" alt="Фото с волейбольного матча">
-                <div class="gradient gradient_news"></div>
-              </div>
-              <time class="news__time" datetime="2021-03-19">19.03.2021</time>
-              <p class="news__text">
-                Результаты и самые мемные моменты матча против ребят из новокузнецка
-              </p>
-            </a>
-          </li>
-          <li class="news__item">
-            <a href="#">
-              <div class="news__photo">
-                <img src="img/news-photo5.jpg" width="450" height="190" alt="Фото с волейбольного матча">
-                <div class="gradient gradient_news"></div>
-              </div>
-              <time class="news__time" datetime="2021-03-19">19.03.2021</time>
-              <p class="news__text">
-                Ого какой мячик красивый летит над сеткой вау
-              </p>
-            </a>
-          </li>
-          <li class="news__item">
-            <a href="#">
-              <div class="news__photo">
-                <img src="img/news-photo6.jpg" width="450" height="190" alt="Фото с волейбольного матча">
-                <div class="gradient gradient_news"></div>
-              </div>
-              <time class="news__time" datetime="2021-03-15">15.03.2021</time>
-              <p class="news__text">
-                Прошли там какиие-то соревнования по волейболу прикольные,
-                чесслово, результаты неожиданные (Нет)
-              </p>
-            </a>
-          </li>
-        </ul>
-        <a class="news__all-button" href="#">Все новости</a>
-      </section>
+        <section class="news">
+          <h2 class="visually-hidden">Новости</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo1.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <time class="news__time" datetime="2021-03-27">27.03.2021</time>
+                <p class="news__text">
+                  Крутое название статьи про чувака,
+                  который упал во время матча против другой крутой команды
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo2.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <time class="news__time" datetime="2021-03-20">20.03.2021</time>
+                <p class="news__text">
+                  Ого какие чуваки крутые, не, ну вы это видели, да они просто мощь!
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo3.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <time class="news__time" datetime="2021-03-20">20.03.2021</time>
+                <p class="news__text">
+                  Ребята кидали мяч и вот что из этого вышло...
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo4.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <time class="news__time" datetime="2021-03-19">19.03.2021</time>
+                <p class="news__text">
+                  Результаты и самые мемные моменты матча против ребят из новокузнецка
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo5.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <time class="news__time" datetime="2021-03-19">19.03.2021</time>
+                <p class="news__text">
+                  Ого какой мячик красивый летит над сеткой вау
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo6.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <time class="news__time" datetime="2021-03-15">15.03.2021</time>
+                <p class="news__text">
+                  Прошли там какиие-то соревнования по волейболу прикольные,
+                  чесслово, результаты неожиданные (Нет)
+                </p>
+              </a>
+            </li>
+          </ul>
+          <a class="news__all-button" href="#">Все новости</a>
+        </section>
+      </div>
 
-      <section class="partners">
-        <h2 class="section-title">Спонсоры и партнеры команды</h2>
+      <section class="partners main-container">
+        <h2 class="section-title partners__title">Спонсоры и партнеры команды</h2>
         <ul class="partners__list">
           <li class="partners__item">
             <a class="partners__logo" href="https://www.uvenco.ru/" target="_blank">
@@ -294,14 +304,15 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__logo">
-        <img src="https://via.placeholder.com/140x80" width="140" height="80" alt="Логотип волейбольного клуба “Кама”">
+    <footer class="page-footer main-container">
+      <div class="page-footer__info">
+        <img class="page-footer__logo" src="https://via.placeholder.com/140x80" width="140" height="80" alt="Логотип волейбольного клуба “Кама”">
+        <p class="page-footer__contacts">
+          <a href="mailto:newpost@gmail.com">newpost@gmail.com</a><br>
+          тел.: <a href="tel:+73421111111">(+7) 342 111 11 11</a><br>
+          <a href="tel:+73421111113">(+7) 342 111 11 13</a>
+        </p>
       </div>
-      <p class="page-footer__copy">
-        Волейбольный клуб “Кама” ©2021<br>
-        Все права защищены.
-      </p>
       <ul class="page-footer__nav-list">
         <li class="page-footer__nav-item">
           <a href="index.html">Главная</a>
@@ -333,10 +344,9 @@
           <a href="#">YouTube</a>
         </li>
       </ul>
-      <p class="page-footer__contacts">
-        <a href="mailto:newpost@gmail.com">newpost@gmail.com</a><br>
-        тел.: <a href="tel:+73421111111">(+7) 342 111 11 11</a><br>
-        <a href="tel:+73421111113">(+7) 342 111 11 13</a>
+      <p class="page-footer__copy">
+        Волейбольный клуб “Кама” ©2021<br>
+        Все права защищены.
       </p>
     </footer>
   </body>
