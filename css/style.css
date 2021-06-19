@@ -101,8 +101,8 @@ a {
   margin-right: 0;
 }
 
-.socials-list__item a {
-  /* font-size: 0; */
+.page-footer__socials-item path {
+  fill: #8a8e93;
 }
 
 .gradient-container {
