@@ -265,6 +265,10 @@ a {
   opacity: 0.5;
 }
 
+.gallery__dots-item:last-child {
+  margin-right: 0;
+}
+
 .gallery__dots-item_active {
   opacity: 1;
 }
