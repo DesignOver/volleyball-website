@@ -366,7 +366,7 @@ a {
   width: 36px;
   height: 36px;
   margin: 0 52px;
-  background-image: url("/img/vs-icon.png");
+  background-image: url("../img/vs-icon.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
