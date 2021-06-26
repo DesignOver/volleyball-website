@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Волейбольный клуб “Кама”</title>
+    <title>Новости - Волейбольный клуб “Кама”</title>
   </head>
 
   <body>
@@ -19,11 +19,11 @@
             <img src="https://via.placeholder.com/140x80" width="140" height="80" alt="Логотип волейбольного клуба “Кама”">
           </a>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item_active">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a href="news.html">Новости</a>
+            <li class="main-nav__item main-nav__item_active">
+              <a href="#">Новости</a>
             </li>
             <li class="main-nav__item">
               <a href="#">Команда</a>
@@ -103,9 +103,9 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Волейбольный клуб “Кама”</h1>
+      <h1 class="visually-hidden">Новости - Волейбольный клуб “Кама”</h1>
       <div class="main-container">
-        <div class="columns-container columns-container_main-news-standings">
+        <div class="columns-container columns-container_main-news-articles">
           <section class="main-news gradient-container">
             <h2 class="visually-hidden">Главная новость</h2>
             <a href="#">
@@ -123,194 +123,41 @@
             </a>
           </section>
 
-          <section class="standings">
-            <h2 class="visually-hidden">Турнирная таблица</h2>
-            <table class="standings__table">
-              <tr class="standings__row standings__row_title">
-                <th>Команды</th>
-                <th>И</th>
-                <th>В</th>
-                <th>П</th>
-                <th>Парт</th>
-                <th>О</th>
-              </tr>
-              <tr class="standings__row">
-                <td>Локомотив-Изумруд</td>
-                <td>10</td>
-                <td>7</td>
-                <td>3</td>
-                <td>21-13</td>
-                <td>20</td>
-              </tr>
-              <tr class="standings__row">
-                <td>МГТУ</td>
-                <td>10</td>
-                <td>6</td>
-                <td>4</td>
-                <td>24-17</td>
-                <td>19</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Ярославич</td>
-                <td>10</td>
-                <td>6</td>
-                <td>4</td>
-                <td>19-17</td>
-                <td>16</td>
-              </tr>
-              <tr class="standings__row standings__row_active">
-                <td>КАМА</td>
-                <td>10</td>
-                <td>5</td>
-                <td>5</td>
-                <td>19-17</td>
-                <td>17</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Искра</td>
-                <td>10</td>
-                <td>5</td>
-                <td>5</td>
-                <td>20-18</td>
-                <td>15</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Нова</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>6-27</td>
-                <td>3</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Еще команда</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>6-27</td>
-                <td>3</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Еще команда</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>6-27</td>
-                <td>3</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Еще команда</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>6-27</td>
-                <td>3</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Еще команда</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>6-27</td>
-                <td>3</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Еще команда</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>6-27</td>
-                <td>3</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Еще команда</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>6-27</td>
-                <td>3</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Еще команда</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>6-27</td>
-                <td>3</td>
-              </tr>
-              <tr class="standings__row">
-                <td>Еще команда</td>
-                <td>10</td>
-                <td>1</td>
-                <td>9</td>
-                <td>6-27</td>
-                <td>3</td>
-              </tr>
-            </table>
-          </section>
-        </div>
-
-        <div class="columns-container">
-          <section class="gallery">
-            <h2 class="visually-hidden">Фотогалерея</h2>
-            <ul class="gallery__list">
-              <li class="gallery__item">
-                <a class="gallery__image">
-                  <img src="img/galllery-photo1.jpg" width="680" height="240" alt="Общее фото команды">
-                  <div class="gradient gradient_gallery"></div>
+          <section class="articles">
+            <h2 class="visually-hidden">Статьи</h2>
+            <ul class="articles__list">
+              <li class="articles__item">
+                <a href="#">
+                  <h3 class="articles__title">Падение крутого чувака</h3>
                 </a>
+                <time class="articles__time" datetime="2021-03-27">27.03.2021</time>
               </li>
-            </ul>
-            <ul class="gallery__dots-list">
-              <li class="gallery__dots-item gallery__dots-item_active"></li>
-              <li class="gallery__dots-item"></li>
-              <li class="gallery__dots-item"></li>
-              <li class="gallery__dots-item"></li>
-              <li class="gallery__dots-item"></li>
-            </ul>
-            <button class="gallery__button gallery__button_prev" type="button">
-              <span class="visually-hidden">Назад</span>
-              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.56038 14.4321C8.94855 14.0412 8.94744 13.4099 8.55789 13.0204L4.24384 8.70634C3.85361 8.31611
-                3.85327 7.68354 4.24306 7.29289L8.55693 2.96961C8.94673 2.57896 8.94639 1.94639 8.55616 1.55616L8.20711
-                1.20711C7.81658 0.816582 7.18342 0.816583 6.79289 1.20711L0.707107 7.29289C0.316583 7.68342 0.316582
-                8.31658 0.707107 8.70711L6.79039 14.7904C7.18189 15.1819 7.81698 15.1808 8.2071 14.7879L8.56038 14.4321Z" fill="white"/>
-              </svg>
-            </button>
-            <button class="gallery__button gallery__button_next" type="button">
-              <span class="visually-hidden">Вперед</span>
-              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.439614 14.4321C0.051444 14.0412 0.0525592 13.4099 0.442108 13.0204L4.75616 8.70634C5.14638
-                8.31611 5.14673 7.68354 4.75693 7.29289L0.443061 2.96961C0.0532631 2.57896 0.0536083 1.94639 0.443832
-                1.55616L0.792889 1.20711C1.18341 0.816582 1.81658 0.816582 2.2071 1.20711L8.29289 7.29289C8.68341 7.68342
-                8.68341 8.31658 8.29289 8.70711L2.20961 14.7904C1.81811 15.1819 1.18301 15.1808 0.792898 14.7879L0.439614
-                14.4321Z" fill="white"/>
-              </svg>
-            </button>
-          </section>
+              <li class="articles__item">
+                <a href="#">
+                  <h3 class="articles__title">Интервью с чуваком, который упал</h3>
+                </a>
+                <time class="articles__time" datetime="2021-03-27">27.03.2021</time>
+              </li>
+              <li class="articles__item">
+                <a href="#">
+                  <h3 class="articles__title">Тренер прокомментировал ситуацию...</h3>
+                </a href="#">
+                <time class="articles__time" datetime="2021-03-27">27.03.2021</time>
+              </li>
+              <li class="articles__item">
+                <a href="#">
+                  <h3 class="articles__title">Наши ребята молодцы, да</h3>
+                </a>
+                <time class="articles__time" datetime="2021-03-26">26.03.2021</time>
+              </li>
+              <li class="articles__item">
+                <a href="#">
+                  <h3 class="articles__title">Наши ребята молодцы, да</h3>
+                </a>
+                <time class="articles__time" datetime="2021-03-26">26.03.2021</time>
+              </li>
 
-          <section class="closest-match">
-            <div class="closest-match__title-row">
-              <h2 class="section-title section-title_small closest-match__title">Ближайший матч</h2>
-              <a class="closes-match__more-link" href="#">Подробнее</a>
-            </div>
-            <div class="closest-match__content">
-              <div class="closest-match__match-row">
-                <div class="team team_first closes-match_team">
-                  <h3 class="team__title">КАМА</h3>
-                  <img src="img/team1-logo.png" width="70" height="70" alt="Логотип команды ”КАМА”">
-                </div>
-                <div class="closest-match__divider"></div>
-                <div class="team team_second closes-match_team">
-                  <img src="img/team2-logo.png" width="70" height="70" alt="Логотип команды ”Локомотив-Изумруд”">
-                  <h3 class="team__title">Локомотив-Изумруд</h3>
-                </div>
-              </div>
-              <p class="closest-match__details">
-                <time datetime="2021-03-29">Сб, 29.03.2021</time><br>
-                Пермь
-              </p>
-            </div>
+            </ul>
           </section>
         </div>
 
@@ -403,55 +250,98 @@
                 </div>
               </a>
             </li>
+            <li class="news__item gradient-container">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo1.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <div class="news__description gradient-text">
+                  <time class="news__time" datetime="2021-03-27">27.03.2021</time>
+                  <p class="news__text">
+                    Крутое название статьи про чувака,
+                    который упал во время матча против другой крутой команды
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="news__item gradient-container">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo2.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <div class="news__description gradient-text">
+                  <time class="news__time" datetime="2021-03-20">20.03.2021</time>
+                  <p class="news__text">
+                    Ого какие чуваки крутые, не, ну вы это видели, да они просто мощь!
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="news__item gradient-container">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo3.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <div class="news__description gradient-text">
+                  <time class="news__time" datetime="2021-03-20">20.03.2021</time>
+                  <p class="news__text">
+                    Ребята кидали мяч и вот что из этого вышло...
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="news__item gradient-container">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo4.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <div class="news__description gradient-text">
+                  <time class="news__time" datetime="2021-03-19">19.03.2021</time>
+                  <p class="news__text">
+                    Результаты и самые мемные моменты матча против ребят из новокузнецка
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="news__item gradient-container">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo5.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <div class="news__description gradient-text">
+                  <time class="news__time" datetime="2021-03-19">19.03.2021</time>
+                  <p class="news__text">
+                    Ого какой мячик красивый летит над сеткой вау
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="news__item gradient-container">
+              <a href="#">
+                <div class="news__photo">
+                  <img src="img/news-photo6.jpg" width="450" height="190" alt="Фото с волейбольного матча">
+                  <div class="gradient gradient_news"></div>
+                </div>
+                <div class="news__description gradient-text">
+                  <time class="news__time" datetime="2021-03-15">15.03.2021</time>
+                  <p class="news__text">
+                    Прошли там какиие-то соревнования по волейболу прикольные,
+                    чесслово, результаты неожиданные (Нет)
+                  </p>
+                </div>
+              </a>
+            </li>
           </ul>
           <div class="news__all-button-container">
-            <a class="news__all-button" href="#">Все новости</a>
+            <a class="news__all-button" href="#">Показать больше</a>
           </div>
         </section>
       </div>
-
-      <section class="partners">
-        <div class="main-container">
-          <h2 class="section-title partners__title">Спонсоры и партнеры команды</h2>
-          <ul class="partners__list">
-            <li class="partners__item">
-              <a class="partners__logo" href="https://www.uvenco.ru/" target="_blank">
-                <img src="img/uvenco-logo.png" width="240" height="120" alt="Uvenco">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="https://www.uvenco.ru/" target="_blank">
-                <img src="img/uvenco-logo.png" width="240" height="120" alt="Uvenco">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="https://www.uvenco.ru/" target="_blank">
-                <img src="img/uvenco-logo.png" width="240" height="120" alt="Uvenco">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="https://www.uvenco.ru/" target="_blank">
-                <img src="img/uvenco-logo.png" width="240" height="120" alt="Uvenco">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="https://www.uvenco.ru/" target="_blank">
-                <img src="img/uvenco-logo.png" width="240" height="120" alt="Uvenco">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="https://www.uvenco.ru/" target="_blank">
-                <img src="img/uvenco-logo.png" width="240" height="120" alt="Uvenco">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="https://www.uvenco.ru/" target="_blank">
-                <img src="img/uvenco-logo.png" width="240" height="120" alt="Uvenco">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
     </main>
 
     <footer class="page-footer">
