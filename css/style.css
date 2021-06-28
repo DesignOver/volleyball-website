@@ -141,6 +141,12 @@ a {
   background-image: linear-gradient(180deg, rgba(84, 84, 84, 0) 45.83%, rgba(9, 9, 9, 0.77) 100%);
 }
 
+.gradient_compilation {
+  width: 920px;
+  height: 340px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 5.73%, rgba(255, 255, 255, 0) 49.48%, rgba(0, 0, 0, 0.5) 93.23%);
+}
+
 .gradient-text {
   position: absolute;
   bottom: 0;
@@ -153,11 +159,7 @@ a {
   align-items: center;
 }
 
-.columns-container_main-news-standings {
-  align-items: flex-start;
-}
-
-.columns-container_main-news-articles {
+.columns-container_top {
   align-items: flex-start;
 }
 
@@ -259,6 +261,7 @@ a {
 }
 
 .articles__item a {
+  display: block;
   text-decoration: none;
 }
 
@@ -276,7 +279,7 @@ a {
   color: #8a8e93;
 }
 
-.articles__item::after {
+.articles__item a::after {
   content: "";
   display: block;
   width: 100%;
@@ -286,9 +289,8 @@ a {
 }
 
 .gallery {
-  position: relative;
+  box-sizing: border-box;
   width: 680px;
-  margin-right: 40px;
   margin-bottom: 40px;
 }
 
@@ -296,14 +298,6 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.gallery__item {
-  position: relative;
-}
-
-.gallery__image {
-  display: block;
 }
 
 .gallery__dots-list {
@@ -384,6 +378,7 @@ a {
 }
 
 .closest-match {
+  box-sizing: border-box;
   width: 680px;
   margin-bottom: 40px;
   padding: 20px;
@@ -577,8 +572,12 @@ a {
   list-style: none;
 }
 
-.group {
+.team-structure__groups-item {
   margin-bottom: 30px;
+}
+
+.team-structure__groups-item:last-child {
+  margin-bottom: 0;
 }
 
 .group__title {
@@ -611,19 +610,317 @@ a {
 }
 
 .group__name {
-  padding: 20px 70px 25px 20px;
   margin: 0;
+  padding: 20px 70px 25px 20px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .group__arrow-icon_up {
   position: absolute;
-  bottom: 15px;
   right: 18px;
+  bottom: 15px;
+}
+
+.compilation {
+  box-sizing: border-box;
+  width: 920px;
+  margin-bottom: 50px;
+}
+
+.compilation__description {
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.compilation__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.compilation__time {
+  font-size: 12px;
+}
+
+.compilation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.compilation__dots-list {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translate(-50%, 0);
+}
+
+.compilation__dots-item {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.compilation__dots-item:last-child {
+  margin-right: 0;
+}
+
+.compilation__dots-item_active {
+  opacity: 1;
+}
+
+.compilation__button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.compilation__button_prev {
+  top: 50%;
+  left: 20px;
+  margin-top: -20px;
+}
+
+.compilation__button_prev .arrow-icon {
+  transform: rotate(-90deg);
+}
+
+.compilation__button_next {
+  top: 50%;
+  right: 20px;
+  margin-top: -20px;
+}
+
+.compilation__button_next .arrow-icon {
+  transform: rotate(90deg);
+}
+
+.column-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000000;
+}
+
+.column-title_grey {
+  color: #8a8e93;
+}
+
+.calendar {
+  box-sizing: border-box;
+  width: 440px;
+  max-height: 340px;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  overflow-y: auto;
+}
+
+.calendar__column-title {
+  margin-bottom: 30px;
+}
+
+.calendar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calendar__item {
+  margin-bottom: 20px;
+}
+
+.calendar__item:last-child {
+  margin-bottom: 0;
+}
+
+.calendar__item a {
+  display: block;
+  text-decoration: none;
+}
+
+.calendar__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8a8e93;
+}
+
+.calendar__item_active .calendar__title {
+  color: #000000;
+}
+
+.calendar__item a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  background-color: #cccdd0;
+}
+
+.all-photos {
+  margin-bottom: 40px;
+}
+
+.all-photos__seasons-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.all-photos__seasons-item {
+  margin-bottom: 30px;
+}
+
+.all-photos__seasons-item:last-child {
+  margin-bottom: 0;
+}
+
+.season__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: none;
+}
+
+.season__title::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #cccdd0;
+}
+
+.season__list {
+  display: grid;
+  justify-content: space-between;
+  gap: 30px 40px;
+  grid-template-columns: repeat(3, 440px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.season__item {
+  color: #000000;
+}
+
+.season__photo {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.season__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.season__time {
+  margin-right: 30px;
+  font-size: 12px;
+}
+
+.season__count {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+.season__count::before {
+  content: "";
+  width: 18px;
+  height: 15px;
+  margin-right: 6px;
+  background-image: url("/img/photo-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.season__name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.season__name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__item a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #898f94;
+  text-decoration: none;
+}
+
+.pagination__item_current a {
+  color: #000000;
+  cursor: default;
+}
+
+.pagination__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.pagination__button path {
+  fill: #80888f;
+}
+
+.pagination__button_prev .arrow-icon {
+  transform: rotate(-90deg);
+}
+
+.pagination__button_next .arrow-icon {
+  transform: rotate(90deg);
 }
 
 .page-footer {
