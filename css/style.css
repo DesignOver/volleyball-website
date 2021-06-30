@@ -164,6 +164,10 @@ a {
   align-items: flex-start;
 }
 
+.columns-container_no-spaces {
+  justify-content: flex-start;
+}
+
 .main-news {
   width: 1045px;
   margin-bottom: 40px;
@@ -387,6 +391,10 @@ a {
   background-color: #f5f5f5;
 }
 
+.closest-match_matches {
+  margin-right: 40px;
+}
+
 .closest-match__content {
   display: flex;
   flex-direction: column;
@@ -399,7 +407,7 @@ a {
   margin-bottom: 45px;
 }
 
-.closes-match__more-link {
+.closest-match__more-link {
   font-weight: 600;
   font-size: 14px;
   color: inherit;
@@ -417,31 +425,46 @@ a {
 .team {
   display: flex;
   align-items: center;
+}
+
+.team.closest-match__team {
   font-weight: 700;
   font-size: 12px;
 }
 
-.team__title {
+.closest-match__team .team__title {
   width: 160px;
 }
 
 .team_first .team__title {
-  margin-right: 20px;
   text-align: right;
 }
 
+.team_first.closest-match__team .team__title {
+  margin-right: 20px;
+}
+
 .team_second .team__title {
-  margin-left: 20px;
   text-align: left;
+}
+
+.team_second.closest-match__team .team__title {
+  margin-left: 20px;
+}
+
+.team__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
 .closest-match__divider {
   width: 36px;
   height: 36px;
   margin: 0 52px;
-  background-image: url("./img/vs-icon.png");
+  background-image: url("../img/vs-icon.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
 
 .closest-match__details {
@@ -729,39 +752,42 @@ a {
   color: #8a8e93;
 }
 
-.calendar {
+.list-block {
   box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.list-block_calendar {
   width: 440px;
   max-height: 340px;
   margin-bottom: 50px;
   padding: 0 20px;
-  overflow-y: auto;
 }
 
-.calendar__column-title {
+.list-block__column-title {
   margin-bottom: 30px;
 }
 
-.calendar__list {
+.list-block__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.calendar__item {
+.list-block__item {
   margin-bottom: 20px;
 }
 
-.calendar__item:last-child {
+.list-block__item:last-child {
   margin-bottom: 0;
 }
 
-.calendar__item a {
+.list-block__item a {
   display: block;
   text-decoration: none;
 }
 
-.calendar__title {
+.list-block__title {
   margin: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -770,11 +796,11 @@ a {
   color: #8a8e93;
 }
 
-.calendar__item_active .calendar__title {
+.list-block__item_active .list-block__title {
   color: #000000;
 }
 
-.calendar__item a::after {
+.list-block__item a::after {
   content: "";
   display: block;
   width: 100%;
@@ -860,7 +886,7 @@ a {
   width: 18px;
   height: 15px;
   margin-right: 6px;
-  background-image: url("..//img/photo-icon.svg");
+  background-image: url("../img/photo-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -874,6 +900,175 @@ a {
 .season__name a {
   color: inherit;
   text-decoration: none;
+}
+
+.closest-match_matches {
+  margin-bottom: 40px;
+}
+
+.list-block_tournaments {
+  width: 330px;
+  max-height: 240px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.list-block_tournaments-calendar {
+  width: 330px;
+  max-height: 240px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.all-matches {
+  margin-bottom: 40px;
+}
+
+.all-matches__title {
+  margin-bottom: 40px;
+}
+
+.all-matches__months-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.all-matches__months-item {
+  margin-bottom: 20px;
+}
+
+.all-matches__months-item:last-child {
+  margin-bottom: 0;
+}
+
+.month__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.month__title::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #cccdd0;
+}
+
+.month__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.month__item {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.month__item:last-child {
+  margin-bottom: 0;
+}
+
+.match__list {
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px 20px 10px 33px;
+  list-style: none;
+}
+
+.match__item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.match__item_teams {
+  width: 483px;
+  margin-right: 20px;
+}
+
+.team.match__team {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.match__team .team__title {
+  width: 100px;
+}
+
+.team_first.match__team .team__title {
+  margin-right: 20px;
+}
+
+.team_second.match__team .team__title {
+  margin-left: 20px;
+}
+
+.match__divider {
+  width: 30px;
+  height: 30px;
+  margin: 0 30px;
+  background-image: url("../img/vs-icon_small.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.match__item_time {
+  width: 170px;
+  margin-right: 24px;
+}
+
+.match__item_place {
+  width: 200px;
+  margin-right: 23px;
+}
+
+.match__item_league {
+  width: 200px;
+  margin-right: 77px;
+}
+
+.match__item_result {
+  width: 150px;
+}
+
+.match__status {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.match__status_soon {
+  color: #b5bcc8;
+}
+
+.match__status_win {
+  color: #6de16b;
+}
+
+.match__status_draw {
+  color: #ffdd61;
+}
+
+.match__status_lose {
+  color: #ff8e8e;
+}
+
+.match__scores {
+  margin: 0;
 }
 
 .pagination__list {
