@@ -1138,6 +1138,23 @@ img {
   margin-bottom: 40px;
 }
 
+.related-posts__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #8a8e93;
+}
+
+.related-posts__title::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #cccdd0;
+}
+
 .related-posts__list {
   display: grid;
   justify-content: space-between;
